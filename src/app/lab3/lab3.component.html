@@ -1,0 +1,19 @@
+<!--
+<pre>
+  {{ csp | json }}
+</pre>
+-->
+
+<h2>Lab3</h2>
+
+Title: {{ csp[0].title }}
+
+<hr>
+
+
+<pre> Model: {{cspTitle }}</pre>
+  <input [(ngModel)]="cspTitle"
+       [typeahead]="csp"
+       typeaheadOptionField="title"
+       typeaheadGroupField="region"
+       class="form-control">

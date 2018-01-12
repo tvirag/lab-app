@@ -1,0 +1,40 @@
+<div class="btn-group" dropdown="">
+  <button dropdownToggle="" type="button" class="btn btn-primary dropdown-toggle">
+    Button dropdown <span class="caret"></span>
+  </button>
+  <ul *dropdownMenu="" class="dropdown-menu" role="menu">
+    <li role="menuitem">
+      <a class="dropdown-item" href="#">Action</a>
+    </li>
+    <li role="menuitem">
+      <a class="dropdown-item" href="#">Another action</a>
+    </li>
+    <li role="menuitem">
+      <a class="dropdown-item" href="#">Something else here</a>
+    </li>
+    <li class="divider dropdown-divider"></li>
+    <li role="menuitem">
+      <a class="dropdown-item" href="#">Separated link</a>
+    </li>
+  </ul>
+</div>
+
+
+<pre>
+  {{ posts | json }}
+</pre>
+
+Title: {{ posts[0].title }}
+
+<!--
+Enter Title Here: <input type="text" [value]="posts[0].title" /> {{ posts[0].title }}
+<br />
+Tw0-way-binding Title Here: <input type="text" (input)="posts[0].title=$event.target.value" [value]="posts[0].title" /> {{ posts[0].title }}
+<br />
+
+<ul>
+  <li *ngFor="let post of posts">
+    {{ post.xref }} - {{ post.title }}
+  </li>
+</ul>
+-->

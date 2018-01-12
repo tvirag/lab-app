@@ -1,7 +1,18 @@
 {
+  "csp" : [
+    { "id": 1, "title": "Pupils", "region": "Anatomy", "description": "What is pupil" },
+    { "id": 2, "title": "Secondary assessment", "region": "Assessment", "description": "Check is pupil during secondary assessment" },
+    { "id": 3, "title": "Drug use", "region": "Conditions", "description": "Drug use may cause diluted pupils" },
+    { "id": 4, "title": "Stroke", "region": "Conditions", "description": "Stroke may cause costricted pupils" },
+    { "id": 5, "title": "Treat injured eye", "region": "Procedures", "description": "How to treat injured eyes and pupils" }
+
+  ],
+
   "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" },
-    { "id": 2, "title": "hey", "author": "typicode" }
+    { "id": 1, "xref": "A1/A2/B1 ", "title": "json1", "author": "1typicode" },
+    { "id": 2, "xref": "A1/B1/B2 ", "title": "hey1", "author": "2typicode" },
+    { "id": 3, "xref": "A2/B1/B3 ", "title": "by1", "author": "3typicode" }
+
   ],
   "comments": [
     { "id": 1, "body": "some comment", "postId": 1 }
